@@ -1,0 +1,236 @@
+@font-face {
+    font-family: "Hanken Grotesk";
+    src: url("../assets/fonts/HankenGrotesk-VariableFont_wght.ttf") format("trueType");
+    font-display: swap;
+}
+
+/* || RESET CSS */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+/* || STYLES */
+body {
+    font-family: 'Hanken Grotesk';
+    font-size: 1rem;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
+
+.container {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 100%;
+    
+}
+
+.first__element {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    min-height: auto;
+    padding: 1rem;
+}
+
+
+
+.first__element > p,
+.first__element--item p:last-child {
+    color: hsla(248, 100%, 84%, 0.836);
+    font-weight: 700;
+}
+
+.first__element--item p:last-child {
+    color: hsla(248, 100%, 84%, 0.635);
+}
+.first__element--item {
+    background: linear-gradient(hsla(256, 72%, 46%, 1),hsla(241, 72%, 46%, 0));
+    width: 150px;
+    height: auto;
+    padding: 2rem;
+    text-align: center;
+    border-radius: 50%;
+    margin: 1.5rem;
+}
+.first__element h3,
+.first__element--item p {
+    color: white;
+}
+
+.first__element h3 {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.first__element--item p:first-child {
+    font-size: 3rem;
+    font-weight: bolder;
+}
+
+.last-p {
+    text-align: center;
+    padding: .2rem;
+    margin: 0.5rem;
+    max-width: 80%;
+    margin-bottom: 1.5rem;
+}
+
+
+.second__element {
+    max-width: 80%;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+    
+}
+
+.second__element h3 {
+    color: #363953;
+    font-weight: 800;
+    margin-bottom: 0.5rem;
+    text-align: start;
+}
+
+.second__element--item span {
+    display: flex;
+    gap: .5rem;
+    padding: 0.5rem 0;
+    align-items: center;
+    margin-left: .5rem;
+}
+
+.second__element--item {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+    border-radius: 10px;
+    padding: 0.2rem 0;
+}
+
+.num {
+    display: flex;
+    gap: 0.5rem;
+    margin-right: 1rem;
+}
+
+.num p:first-child{
+    color: #363953;
+    font-weight: 900;
+}
+
+.num p:last-child {
+    font-weight: 900;
+    color: hsla(234, 21%, 27%, 0.60);
+}
+
+
+.text-red {
+color: hsl(0, 100%, 67%);
+}
+
+.text-yel {
+    color: hsl(39, 100%, 56%);
+}
+
+.text-gr{
+    color: hsl(166, 100%, 37%);
+}
+
+.text-bl {
+    color:hsl(234, 85%, 45%);
+}
+
+.text-red,
+.text-yel,
+.text-gr,
+.text-bl {
+    font-weight: 700;
+}
+
+.span-r{
+    background: hsla(0, 100%, 67%, 0.050);
+}
+
+.span-y{
+    background: hsla(39, 100%, 56%, 0.050);
+}
+
+.span-g {
+    background: hsl(166, 100%, 37%, 0.050);
+}
+
+.span-b {
+    background: hsl(234, 85%, 45%, 0.050);
+}
+
+
+.btn {
+    min-width: 80%;
+    height: auto;
+    font-size: 1rem;
+    padding: 1rem;
+    border-radius: 30px;
+    margin: 0 auto;
+    margin-bottom: 5rem;
+    background: hsla(224, 30%, 27%, 0.938);
+    color: white;
+    border: none;
+    font-weight: 700;
+}
+
+
+footer {
+    position: relative;
+    top: 120px;
+
+}
+
+.attribution {
+    text-align: center;
+    
+
+}
+
+
+/* NOTA VER PORQUE NO ME QUED ABIEN LA VERSION DE ESCRITORIO */
+
+@media screen and (min-width:1440px) {
+    body{
+        align-items: center;
+    }
+    .container {
+        display: flex;
+        width: 600px;
+        height: 380px;
+        margin-top: 12rem;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+        box-shadow: 0px 0px 15px 0px hsl(241, 100%, 89%)
+    }
+    .first__element {
+        width: 55%;
+        border-top-left-radius: 20px;    
+        border-top-right-radius: 20px;    
+    }
+    .desktop {
+        width: 50%;
+    }
+
+}
