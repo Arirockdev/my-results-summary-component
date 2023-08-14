@@ -193,6 +193,10 @@ color: hsl(0, 100%, 67%);
     font-weight: 700;
 }
 
+.btn:hover {
+    background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
+
 
 footer {
     position: relative;
